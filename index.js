@@ -19,6 +19,6 @@ function currentLine(line) {
         waiting += `${i + 1}. ${line.slice(i, i + 1)}, `
       } else {waiting += `${i + 1}. ${line.slice(i, i + 1)}`}
     }
-  return waiting.slice
+  return waiting
   } else { return "The line is currently empty."}
 }
