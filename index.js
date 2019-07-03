@@ -14,9 +14,11 @@ function nowServing(katzDeliLine) {
 function currentLine(line) {
  if (line.length !== 0) {
    var waiting = `The line is currently: `
-      for (var i = 0; i < line.length; i++) {
+   for (var i = 0; i < line.length; i++) {
+      if (i < line.length) {
         waiting += `${i + 1}. ${line.slice(i, i + 1)}, `
-      }
-      return waiting.slice(0, -1);
+      } else {waiting += `${i + 1}. ${line.slice(i, i + 1)}`}
+    }
+  return waiting.slice(0, -1);
   } else { return "The line is currently empty."}
 }
