@@ -19,7 +19,7 @@ function currentLine(line) {
     }
     return array
 */    var waiting = `The line is currently: `
-      for (var i = 0, i < line.length, i++) {
+      for (var i = 0; i < line.length; i++) {
         waiting += `${i + 1}: ${line.slice(i, i + 1)}`
       }
       return waiting
