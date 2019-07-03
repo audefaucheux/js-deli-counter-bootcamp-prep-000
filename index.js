@@ -17,7 +17,7 @@ function currentLine(line) {
       for (var i = 0; i < line.length; i++) {
         waiting += `${i + 1}. ${line.slice(i, i + 1)}, `
       }
-      waiting.slice(0,-1)
-      return waiting
+      var waiting2 = waiting.slice(0,-1)
+      return waiting2
   } else { return "The line is currently empty."}
 }
