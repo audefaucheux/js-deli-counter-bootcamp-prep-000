@@ -1,3 +1,4 @@
 function takeANumber(currentLine, personName) {
-  return `Welcome, ${personName}. You are number ${personName.length + 1} in line.`
+  currentLine.push(personName)
+  return `Welcome, ${personName}. You are number ${currentLine.length} in line.`
 }
