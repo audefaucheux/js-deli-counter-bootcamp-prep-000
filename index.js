@@ -3,9 +3,9 @@ function takeANumber(currentLine, personName) {
   return `Welcome, ${personName}. You are number ${currentLine.length} in line.`
 }
 
-function nowServing(currentLine) {
+function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0) {
     return "There is nobody waiting to be served!"
-  } else {`Currently serving ${katzDeliLine.slice(currentLine,currentLine + 1)}`}
+  } else {`Currently serving ${katzDeliLine.slice(katzDeliLine,katzDeliLine + 1)}`}
   katzDeliLine.shift()
 }
