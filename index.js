@@ -16,7 +16,7 @@ function currentLine(line) {
    var waiting = `The line is currently: `
       for (var i = 0; i < line.length; i++) {
         if (i++ < line.length) {
-          waiting += `${i + 1}: ${line.slice(i, i + 1), }`
+          waiting += `${i + 1}: ${line.slice(i, i + 1)}, `
         } else {waiting += `${i + 1}: ${line.slice(i, i + 1)}`}
       }
       return waiting
