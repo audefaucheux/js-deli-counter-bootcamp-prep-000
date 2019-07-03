@@ -15,7 +15,7 @@ function currentLine(line) {
   if (line.length !== 0) {
     for (var i = 0; i < line.lenght; i++) {
       var array = ["The line is currently: "]
-//      array.push(`${i + 1}: ${line.slice(i,i + 1)},`)
+      array.push("test") //(`${i + 1}: ${line.slice(i,i + 1)},`)
     }
     return array
   } else { return "The line is currently empty."}
