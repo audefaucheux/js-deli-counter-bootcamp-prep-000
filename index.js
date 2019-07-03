@@ -12,7 +12,7 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(line) {
-  if (line.lenght !== 0) {
+  if (line.length !== 0) {
 //    for (var i = 0; i < line.lenght; i++) {
 //      var array = ["The line is currently: "]
 //      return array.push(`${i + 1}: ${line.slice(i,i + 1)},`)
